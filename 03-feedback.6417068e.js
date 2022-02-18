@@ -16,4 +16,4 @@ var n,t=arguments[3],r=require("buffer").Buffer;(function(){var r,e=200,u="Unsup
 },{"buffer":"dskh"}],"TTyb":[function(require,module,exports) {
 const e=require("lodash"),t="feedback-form-state",a=document.querySelector(".feedback-form");a.addEventListener("input",e.throttle(l,500)),a.addEventListener("submit",n);try{let e=JSON.parse(localStorage.getItem(t));a.elements.email.value=e.email,a.elements.message.value=e.message}catch{}function l(e){localStorage.setItem(t,JSON.stringify(s()))}function s(){return{email:a.elements.email.value,message:a.elements.message.value}}function n(e){e.preventDefault(),console.log(s()),a.reset(),localStorage.removeItem(t)}
 },{"lodash":"B1iE"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.6417068e.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.6417068e.js.map
